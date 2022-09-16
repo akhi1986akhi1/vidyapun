@@ -1,0 +1,222 @@
+<div class="internship-page">
+   
+		<div class="internship-page-inner">
+			  <div class="row">
+            <div class="col-lg-2">
+                <figure class="pic-frame">
+                    <img alt="" class="product-image" src="assets/images/profile.jpg">
+                    <a href="">Upload photo </a>
+                </figure>
+                
+            </div>
+            <div class="col-lg-10">
+                   <div class="content-info mt-40 mb-40">
+                     <div class="row">
+                       
+                        <form id="contact-form" [formGroup]="profileBasicInfoForm" (ngSubmit)="userRegistration();" novalidate="true">
+                         
+                            <div class="row">
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Surname</label>
+                                     <select class="form-control">
+										<option value="Mr">Mr.</option>
+										<option value="Mrs">Mrs.</option>
+										<option value="Ms">Ms.</option>
+									  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Name" >
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Middle Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Name" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Last Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Name" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">DOB</label>
+                                 <input type="date"  class="form-control" placeholder="DOB">
+                                </div>
+                              </div> 
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Contact No.</label>
+                                 <input type="text"  class="form-control" placeholder="Contact No.">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Email ID</label>
+                                 <input type="text"  class="form-control" placeholder="Alternate Contact No.">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Present Address</label>
+									<textarea class="form-control" placeholder="Present Address"></textarea>
+                                </div>
+                              </div>
+							  
+                            </div>
+							 
+							 <hr/>
+							 <h4>Internship Details</h4>
+							 <div class="row">				
+							  							  
+							  
+							  <div class="col-md-3">
+                               <div class="form-group">
+                                    <label for="lname">Desired Duration</label>
+                                    <select class="form-control">
+										<option>1 Month</option>
+										<option>3 Months</option>
+										<option>6 Months</option>
+									</select>
+                                </div>
+                              </div>
+							  <div class="col-md-3">
+                               <div class="form-group">
+                                    <label for="lname">Desired Internship Type</label>
+									<select class="form-control">
+										<option value="PT">Part Time</option>
+										<option value="FT">Full Time</option>
+                                  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="lname">Start Date 1</label>
+                                 <input type="date"  class="form-control" placeholder="DOB">
+                                </div>
+                              </div> 
+							  <div class="col-md-3">
+                                <div class="form-group">
+                                    <label for="lname">Start Date 2</label>
+                                 <input type="date"  class="form-control" placeholder="DOB">
+                                </div>
+                              </div> 
+							 </div>
+							 <hr/>
+							 <h4>Academics</h4>
+							 <div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="lname">10th</label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div> 
+								  <div class="col-md-6">
+									<div class="form-group">
+										<label for="lname">12th</label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  </div>
+								  <hr/>
+								  <h6>Graduation</h6>
+								  
+								  <div class="row">
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">University Name </label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">College Name </label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">Degree Subjects </label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">Graduation Status </label>
+										<select class="form-control">
+											<option value="PT">Completed</option>
+											<option value="FT">On-going</option>
+									  </select>
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">College Address</label>
+										<textarea class="form-control" placeholder="College Address"></textarea>
+									</div>
+								  </div>
+							 </div>
+							 <hr/>
+								  <h6>Post Graduation</h6>
+								  <div class="row">
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">University Name </label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">College Name </label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">Degree Subjects </label>
+									 <input type="text"  class="form-control" placeholder="DOB">
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">Graduation Status </label>
+										<select class="form-control">
+											<option value="PT">Completed</option>
+											<option value="FT">On-going</option>
+									  </select>
+									</div>
+								  </div>
+								  <div class="col-md-4">
+									<div class="form-group">
+										<label for="lname">College Address</label>
+										<textarea class="form-control" placeholder="College Address"></textarea>
+									</div>
+								  </div>
+							 </div>
+							 <div style="padding:5px; margin-bottom:10px; text-align:justify;">
+								I <span style="font-weight:bold; text-decoration:underline;">Himanshu Purwar</span> certify that information provided in this Internship Application Form is true to the best of my knowledge. I undertake and agree that in case any information found not to be true, it may result in  immediate disqualification of my internship eligibility without any notice.
+							 </div>
+							 
+                            <div class="row">
+                              <div class="col-md-12">
+                                 
+                                <input type="submit" value="Update" class="submit">
+                              </div>
+                            </div>
+                           
+                          </form>
+                 </div>
+                 
+            </div>
+        </div>
+        </div>
+			 </div>  
+        
+   
+</div>

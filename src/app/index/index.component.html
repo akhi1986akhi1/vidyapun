@@ -1,0 +1,158 @@
+<div class="home">
+  <div class="row section1">
+    <div class="col-md-6 left-section">
+      <h1>Plan Your<br /><span>Education</span></h1>
+      <p>
+        We provide platfrom for education industry to fill gap with parents and children.
+
+      </p>
+      <input type="text" (input)="changeNameFilter($event.target.value)" placeholder="Search for Course, college or exam" />
+	  <i (click)="searchByName()" class="fa fa-search"></i>
+    </div>
+    <div class="col-md-6 right_section">
+      <img src="assets/images/Banner Image.png" />
+    </div>
+  </div>
+  <div class="section2">
+    <div
+      class="background"
+      style="background-image: url(assets/images/wave.png);"
+    >
+      <h2 class="text-center">Explore With Us</h2>
+      <p class="subtitle text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+        suspendisse ultrices gravida.
+      </p>
+      <div class="row explore">
+        <div class="col-md-4 explore-more" *ngFor="let list of explore">
+          <img [src]="list?.img" />
+          <h4>{{ list?.name }}</h4>
+          <p>{{ list?.subtitle }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3">
+    <h2 class="text-center">Select Your Career With Us</h2>
+    <p class="subtitle text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+      ultrices gravida.
+    </p>
+    <div class="row explore">
+      <div class="col-md-3 explore-more" *ngFor="let list of career">
+        <img src="assets/images/Medical.png" />
+        <h4>{{ list?.name }}</h4>
+        <p>{{ list?.CollegeCount }} Colleges</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section4">
+    <div
+      class="background"
+      style="background-image: url(assets/images/wave.png);"
+    >
+      <h2 class="text-center">Exams</h2>
+      <p class="subtitle text-center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+        suspendisse ultrices gravida.
+      </p>
+      <div class="row explore">
+        <div class="col-md-4 explore-more" *ngFor="let list of exams">
+          <div class="space">
+            <h2>{{ list?.title }}</h2>
+            <p>{{ list?.subtitle }}</p>
+            <p class="more">Know More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section5">
+    <h2 class="text-center">Featured Colleges</h2>
+    <p class="subtitle text-center">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse
+      ultrices gravida.
+    </p>
+    <div class="row explore">
+      <div class="col-md-4 explore-more" *ngFor="let list of colleges">
+        <div class="space">
+          <ul class="star">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+          </ul>
+          <img src="{{imageBasePath}}{{list.bannerLogo}}" />
+          <h4>
+            {{ list?.name }}<br /><small
+              ><b>Location: </b> {{ list.streetLine1 }}</small
+            >
+          </h4>
+          <p class="more">View Courses</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="row section6">
+    <div class="col-md-3">
+      <h3>Top Courses</h3>
+      <p></p>
+      <ul>
+        <li>MBA</li>
+        <li>BBA</li>
+        <li>M. Tech</li>
+        <li>B. Tech</li>
+        <li>MCA</li>
+        <li>BCA</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3>Top Universities</h3>
+      <p></p>
+      <ul>
+        <li>Engineering</li>
+        <li>Management</li>
+        <li>Law</li>
+        <li>Medical</li>
+        <li>Science</li>
+        <li>Arts</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3>Top Exams</h3>
+      <p></p>
+      <ul>
+        <li>CAT</li>
+        <li>GATE</li>
+        <li>IIT-JEE</li>
+        <li>NET</li>
+        <li>MAT</li>
+        <li>XAT</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h3>Other Links</h3>
+      <p></p>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>News</li>
+        <li>Privacy</li>
+      </ul>
+    </div>
+  </div> -->
+
+
+</div>
+
+
+

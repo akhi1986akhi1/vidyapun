@@ -1,0 +1,291 @@
+<div class="jobposting-page">
+   
+			 <div class="jobposting-page-inner">
+			  <div class="row">
+            <div class="col-lg-2">
+                <figure class="pic-frame">
+                    <img style="width:140px;" alt="" class="product-image" src="assets/images/prologo.jpeg">
+                    <a href="">Upload profile </a>
+                </figure>
+                
+            </div>
+            <div class="col-lg-10">
+                   <div class="content-info mt-40 mb-40">
+                     <div class="row">
+                       
+                        <form id="contact-form" [formGroup]="profileBasicInfoForm" (ngSubmit)="userRegistration();" novalidate="true">
+                         <h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Job Info</h5>
+                            <div class="row">
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Title</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Title" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Report To</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Report To" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">ReportBy</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="ReportBy" >
+                                </div>
+                              </div>
+							   <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Start Date</label>
+									<input type="date"  class="form-control" placeholder="Start Date">
+                                </div>
+                              </div> 
+							   <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">End Date</label>
+									<input type="date"  class="form-control" placeholder="End Date">
+                                </div>
+                              </div> 
+							   <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Posting Date</label>
+									<input type="date"  class="form-control" placeholder="Posting Date">
+                                </div>
+                              </div> 
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Employment Type</label>
+                                     <select class="form-control">
+										<option value="Permanent">Permanent</option>
+										<option value="Temporary">Temporary</option>
+										<option value="Contractual">Contractual</option>
+										<option value="Freelance">Freelance</option>
+										<option value="HomeBased">HomeBased</option>
+									  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Job Type</label>
+                                     <select class="form-control">
+										<option value="Full Time">Full Time</option>
+										<option value="Part Time">Part Time</option>
+									  </select>
+                                </div>
+                              </div>
+                              
+							  
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">No. of Vacancy</label>
+                                  <input id="email" type="Email" name="email" class="form-control" placeholder="No. of Vacancy">       
+                                </div>
+                              </div>
+							       
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Keywords</label>
+                                 <input type="text"  class="form-control" placeholder="Keywords">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Company Name</label>
+                                 <input type="text"  class="form-control" placeholder="Company Name">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Contact Person</label>
+                                 <input type="text"  class="form-control" placeholder="Contact Person">
+                                </div>
+                              </div>
+                            </div>
+							<hr/>
+							<h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Description</h5>
+							 <div class="row">
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Job Objective</label>
+                                 <input type="text"  class="form-control" placeholder="Job Objective">
+                                </div>
+                              </div>
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Key Result Area</label>
+                                 <input type="text"  class="form-control" placeholder="Key Result Area">
+                                </div>
+                              </div>
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Functional Area</label>
+                                 <input type="text"  class="form-control" placeholder="Functional Area">
+                                </div>
+                              </div>
+								<div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Job Description</label>
+                                 <input type="text"  class="form-control" placeholder="Job Description">
+                                </div>
+                              </div>							  
+							 </div>
+							 <hr/>
+							 <h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Experience & CTC</h5>
+							 <div class="row">
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Min Experience</label>
+                                 <input type="text"  class="form-control" placeholder="Min Experience">
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Max Experience</label>
+                                 <input type="text"  class="form-control" placeholder="Max Experience">
+                                </div>
+                              </div>							  
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Min Annual CTC</label>
+									<input type="text" class="form-control" placeholder="Min Annual CTC">
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Max Annual CTC</label>
+									<input type="text" class="form-control" placeholder="Max Annual CTC">
+                                </div>
+                              </div>
+							  
+							 </div>
+							 <hr/>
+							 <h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Location</h5>
+							 <div class="row">
+							  							  
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">State Name</label>
+                                <input type="text" class="form-control" placeholder="State Name">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">City Name</label>
+                                <input type="text" class="form-control" placeholder="City Name">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">Industry Type</label>
+                                <input type="text" class="form-control" placeholder="Industry Type">
+                                </div>
+                              </div>
+							  
+							  
+							  
+							 </div>
+							 <hr/>
+							 <h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Qualification</h5>
+							 <div class="row">
+							  							  
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">UG Qualification</label>
+                                <input type="text" class="form-control" placeholder="UG Qualification">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">PG Qualification</label>
+                                <input type="text" class="form-control" placeholder="PG Qualification">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">Phd Qualification</label>
+									<input type="text" class="form-control" placeholder="Phd Qualification">
+                                </div>
+                              </div>
+							  
+							  
+							  
+							 </div>
+							 <hr/>
+							 <h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Company Info</h5>
+							 <div class="row">
+							  							  
+							  
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">Website</label>
+                                <input type="text" class="form-control" placeholder="Website">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">contact No.</label>
+                                <input type="text" class="form-control" placeholder="contact No.">
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                               <div class="form-group">
+                                    <label for="lname">Email ID</label>
+                                <input type="text" class="form-control" placeholder="Email ID">
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">About Us</label>
+                                <textarea class="form-control" placeholder="About Us"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Address</label>
+                                <textarea class="form-control" placeholder="Address"></textarea>
+                                </div>
+                              </div>
+							  
+							  
+							  
+							 </div>
+							 <hr/>
+							 <h5 style="padding-left:15px; text-decoration:underline; font-style:italic; font-weight:bold;">Suggestion</h5>
+							 <div class="row">
+							  							  
+							  
+							  
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Company</label>
+                                <textarea class="form-control" placeholder="Company"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Industry</label>
+                                <textarea class="form-control" placeholder="Industry"></textarea>
+                                </div>
+                              </div>
+							  
+							  
+							  
+							 </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                 
+                                <input type="submit" value="Update" class="submit">
+                              </div>
+                            </div>
+                           
+                          </form>
+                 </div>
+                 
+            </div>
+        </div>
+        </div>
+			 </div>  
+			  
+			  
+   
+</div>

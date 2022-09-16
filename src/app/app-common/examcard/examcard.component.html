@@ -1,0 +1,39 @@
+<mat-card>
+  <mat-card-content class="detail-section card">
+	<div class="main row">
+		<div class="col-md-6 row">
+			<div class="col-md-2">
+				<img mat-card-image draggable="false" class="author_avatar"
+					  src="assets/images/collage_logo.png"
+					/>
+			</div>
+			<div class="col-md-10">
+				<div class="title">{{exam.title}}
+				</div>
+				<div>{{getApplicationMode(exam.applicationMode)}}</div>
+			</div>
+		</div>
+		<div class="col-md-6 row">
+			<div class="col-md-6">
+				{{exam.startDate | date:'dd/MM/yyyy'}} - {{exam.endDate | date:'dd/MM/yyyy'}}<br/>
+				<a href="">application Form</a>
+			</div>
+			<div class="col-md-6">
+				{{exam.postingDate | date:'dd/MM/yyyy'}}<br/>
+				<a href="">Posting Date</a>
+			</div>
+		</div>
+		<div style="padding-left:15px;">
+			{{exam.shortDescripton}}
+		</div>
+	</div>	
+	<div  class="row footer">
+			<div class="col-md-10">
+			</div>   
+          <div class="col-md-2 text-right">
+            <span class="button"> Get Details </span>
+          </div>          
+    </div>	
+  </mat-card-content>
+
+</mat-card>

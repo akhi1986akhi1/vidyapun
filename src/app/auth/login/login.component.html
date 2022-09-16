@@ -1,0 +1,29 @@
+<div class="login_parent_container">
+  <div class="heading_container">
+    <p class="heading">Login</p>
+    
+  </div>
+  <div class="login_items_container">
+    <div class="login_box">
+      <form [formGroup]="loginForm" (ngSubmit)="userLogin();">
+        <p class="heading">Login with Email</p>
+  
+        <input type="text" formControlName="username" id="email" placeholder="Email" />
+  
+        <input type="password" formControlName="password" id="password" placeholder="Password" />
+  
+  
+        <button class="login_btn" type="submit">
+          Login
+        </button>
+
+      </form>
+    </div>
+  </div>
+
+  <div class="sign_up_container">
+    <p>Don't have an account?</p>
+    &nbsp;
+    <p class="register_form" (click)="openRegisterForm()">Sign up now</p>
+  </div>
+</div>

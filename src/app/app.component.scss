@@ -1,0 +1,19 @@
+@import "./index/index.component";
+@import "./navigation/navigation.component";
+@import "./auth/auth";
+@import "../app/app-common/card/card.component";
+@import "../app/app-common/examcard/examcard.component";
+@import "./college-list/college-list.component";
+
+.page {
+  padding-top: 54px;
+  background: #edeff0;
+  height:100vh;
+  overflow:scroll;
+}
+
+@media screen and (max-width: 768px) {
+  .page {
+    margin-top: 13%;
+  }
+}

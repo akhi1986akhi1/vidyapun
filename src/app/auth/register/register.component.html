@@ -1,0 +1,40 @@
+<div class="register_form_container" id="reg_form_container">
+  <div class="header_container">
+    <p>Register</p>
+	<p style="font-size:12px;" *ngIf="selTabIndex==0">Query for Admission</p>
+	<p style="font-size:12px;" *ngIf="selTabIndex==1">Existing Students</p>
+  </div>
+  <div class="field_container">
+				<div>
+				 <form [formGroup]="registerForm" (ngSubmit)="userRegistration();">
+					<input type="text" formControlName="userName" placeholder="Name" />
+					<input type="text" formControlName="emailID" placeholder="Email ID" />	
+					<input type="password" formControlName="password" placeholder="Password" />	
+					<input type="text" formControlName="phoneNo" placeholder="Phone" />	
+					<select class="form-control" formControlName="StateID" style="margin-top:10px;" placeholder="State" (change)="onStateChange($event.target.value)">
+						<option [ngValue]="0" disabled  selected> State </option>
+                        <option *ngFor="let state of stateList"  value="{{state.recNo}}">{{state.name}}</option>
+                    </select>
+					<select class="form-control" formControlName="CityID" style="margin-top:10px;" placeholder="City">
+						<option [ngValue]="0" disabled  selected> City </option>
+                        <option *ngFor="let city of selCityList" value="{{city.recNo}}">{{city.name}}</option>
+                    </select>
+					<select *ngIf="selTabIndex==0" class="form-control" formControlName="CourseID" style="margin-top:10px;" placeholder="Course">
+                        <option value="0">Course</option>
+						<option *ngFor="let course of courseList" value="{{course.recNo}}">{{course.name}}</option>
+                    </select>
+					<select *ngIf="selTabIndex==1" class="form-control" formControlName="CourseID" style="margin-top:10px;" placeholder="Course">
+                        <option value="0">College</option>
+						<option *ngFor="let college of collegeList" value="{{college.recNo}}">{{college.name}}</option>
+                    </select>
+					<select *ngIf="selTabIndex==1" class="form-control" formControlName="CourseID" style="margin-top:10px;" placeholder="Course">
+                        <option value="0">University</option>
+						<option *ngFor="let college of collegeList" value="{{college.recNo}}">{{college.name}}</option>
+                    </select>	
+					<input *ngIf="selTabIndex==1" type="text" formControlName="rollNo" placeholder="Roll No/Enrollment No." />
+				   <button>
+					Submit
+				  </button>	
+</form>	  
+</div>
+

@@ -1,0 +1,127 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+footer{
+    background-color: #181a33;
+    // background-image: url(http://layerdrops.com/insurwp/wp-content/uploads/2022/07/site-footer-bg.png);
+    color:lightgray;
+    padding: 100px 50px;
+    padding-bottom: 10px;
+    position: relative;
+    .footer-overlay{
+        position: absolute;
+        content: "";
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: url(../../assets/images/site-footer-bg.png);
+        // background-color: red;
+        // background-color: #181a33;
+        // z-index: +999;
+        opacity: 0.1;
+    }
+    .container{
+        .row{
+            display: flex;
+            padding-bottom: 50px;
+            .col{
+                padding: 10px;
+                p{
+                    width:300px;
+                    padding-right: 5px;
+                    font-size: 14px;
+                }
+                img{
+                    height: 44.84px;
+                    margin-bottom: 20px;
+                }
+                h1,h5{
+                    color:#fff;
+                    margin-bottom: 20px;
+                }
+                
+                .footer-social{
+                    display: flex;
+                    gap:10px;
+                    color: #fff;
+                    transition: all 0.3s ease;
+
+                    .bi:hover{
+                        transition: all 0.3s ease;
+                        color: rgb(5, 183, 254);
+                        cursor: pointer;
+                    }
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    font-size: 14px;
+                }
+                li{
+                    position: relative;
+                    padding-left: 10px;
+                    .square-bullet{
+                        display: flex;
+                        position: absolute;
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        top:50%;
+                        transform: translateY(-50%);
+                        left:0;
+                        background: rgb(5, 183, 254);
+                    }
+                    a{
+                        text-decoration: none;
+                        color: lightgray;
+                        transition: all ease-in 0.3s;
+                    }
+                    a:hover{
+                        transition: all ease-in 0.3s;
+                        color:rgb(5, 183, 254);
+                    }
+                }
+                input,button{
+                    width:100%;
+                    margin-bottom: 20px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    outline: none;
+                    border: none;
+                    background: whitesmoke;
+                }
+                button{
+                    background: #1eba76;
+                    color: #fff;
+                    font-weight: 600;
+                }
+                button:hover{
+                    opacity: 0.7;
+                }
+                
+            }
+            .col:nth-child(1){
+
+            }
+          
+            
+        }
+        .row:nth-child(1){
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid grey 1px;
+        }
+        .row:nth-child(2){
+            display: flex;
+            padding-bottom: 0;
+            justify-content:space-evenly;
+            color: gray;
+            .col:nth-child(2){
+                display: flex;
+                justify-content: flex-end;
+
+            }
+        }
+    }
+}

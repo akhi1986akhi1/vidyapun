@@ -1,0 +1,108 @@
+.jobposting-page{
+ 
+    padding: 20px;
+
+    .jobposting-page-inner{
+        background-color: #ffffff !important;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+    box-shadow: 0px 0px 15px 0px rgba(72,73,121,0.15);
+    padding: 40px 0;
+    .form-group{
+        label{
+            font-size: 13px;
+            font-weight: 500;
+        }
+    }
+    .form-control {
+        height: 35px;
+        
+    }
+    .submit{
+        background: #0678dc;
+        color: #ffffff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    textarea.form-control{
+        height: 100px;
+    }
+    .form-radio{
+        input{
+            margin-right: 10px;
+        }
+        label{
+            margin-right: 10px;
+        }
+    }
+    }
+}
+.product-image{
+
+}
+.pic-frame {
+    position: relative;
+    padding-left: 25px;
+    display: inline-block;
+    z-index: 10;
+    
+    a{
+        padding: 11px 0;
+    border: 1px solid;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 13px;
+    }
+}
+.table {
+	background-color:white;
+	height: 100%;
+	padding: 0px;
+	
+    table {
+	  border-collapse: collapse;
+	  width:100%;
+	}
+
+	th {
+	  border: 1px solid #EFEFEF;
+	}
+	
+	th{
+	 background-color:#FAFAFA;
+	 font-size:14px;
+	 font-weight:normal;
+	}
+	td{
+	 padding:1px;
+	 padding-right:5px;
+	}
+	.form-control
+	{
+		border-top:0px;
+		border-right:0px;
+		border-left:0px;
+		border-radius:0px;
+	}
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ccc;
+    font-size: 12px;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 12px;
+    color: #ccc;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 12px;
+    color: #ccc;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 12px;
+    color: #ccc;
+
+  }

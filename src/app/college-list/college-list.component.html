@@ -1,0 +1,108 @@
+<div class="collage-lising" style="margin-top:20px;">
+<div class="row">
+   <div class="col-md-3 pr0">
+       <div  class="side-filter">
+        <div class="block-content">
+			<div class="filter-options-item filter-categori">
+                <div class="filter-options-title">By Name</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" (click)="searchByName()" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" (input)="changeNameFilter($event.target.value)" placeholder="FIND UNIVERSITY">
+                    </div>
+                </div>
+            </div>
+            <div class="filter-options-item filter-categori">
+                <div class="filter-options-title">State</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" (input)="changeStateFilter($event.target.value)" placeholder="FIND STATE">
+                    </div>
+                    <ul>                       
+                        <li *ngFor="let state of stateList">
+                            <label class="inline">
+                                <input (change)="onStateCheckboxChange($event)" type="checkbox" [value]="state.recNo">
+                                <span class="input"></span>{{state.name}}
+                           </label>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-options-item filter-brand">
+                <div class="filter-options-title">City</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" (input)="changeCityFilter($event.target.value)"  placeholder="FIND CITY">
+                    </div>
+                    <ul>
+                        <li *ngFor="let city of cityList">
+                            <label class="inline">
+                                <input type="checkbox" (change)="onCityCheckboxChange($event)" [value]="city.recNo">
+                                <span class="input" ></span>{{city.name}}
+                            </label>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-options-item filter-brand">
+                <div class="filter-options-title">Stream</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="FIND STREAM">
+                    </div>
+                    <ul>
+                        <li *ngFor="let steam of steamList">
+                            <label class="inline">
+                                <input type="checkbox" [value]="steam.recNo">
+                                <span class="input" ></span>{{steam.name}}
+                            </label>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="filter-options-item filter-brand">
+                <div class="filter-options-title">Sub Stream</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="FIND SUB STREAM">
+                    </div>
+                    <ul>
+                        <li *ngFor="let substeam of subSteamList">
+                            <label class="inline">
+                                <input type="checkbox" [value]="substeam.recNo">
+                                <span class="input" ></span>{{substeam.name}}
+                            </label>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+         
+            
+           
+        </div>
+       </div>
+   </div>
+
+   <div class="col-md-9 pl0">
+       <div  class="college-list-container">
+           <div class="row">
+               <div style="cursor:pointer" *ngFor="let college of colllegeList" class="col-md-4" routerLink="/collegedetail/{{college.code}}">
+					<app-card [CollegeList]="college"></app-card>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</div>
+</div>

@@ -1,0 +1,1449 @@
+<div class="professorform-page">
+   
+		<mat-tab-group>
+			<mat-tab label="General Info">
+			 <div class="professorform-page-inner">
+			  <div class="row">
+            <div class="col-lg-2">
+                <figure class="pic-frame">
+                    <img style="width:140px;" alt="" class="product-image" src="assets/images/prologo.jpeg">
+                    <a href="">Upload profile </a>
+                </figure>
+                
+            </div>
+            <div class="col-lg-10">
+                   <div class="content-info mt-40 mb-40">
+                     <div class="row">
+                       
+                        <form id="contact-form" [formGroup]="profileBasicInfoForm" (ngSubmit)="userRegistration();" novalidate="true">
+                         
+                            <div class="row">
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Surname</label>
+                                     <select class="form-control">
+										<option value="Mr">Mr.</option>
+										<option value="Mrs">Mrs.</option>
+										<option value="Ms">Ms.</option>
+									  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="First Name" >
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Middle Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Middle Name" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Last Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Last Name" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">DOB</label>
+                                 <input type="Number"  class="form-control" placeholder="DOB">
+                                </div>
+                              </div> 
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Father's/Spouse Name</label>
+                                  <input id="email" type="Email" name="email" class="form-control" placeholder="Father's/Spouse Name">       
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Marital Status</label>
+                                  <select class="form-control">
+                                    <option value="AF">Yes</option>
+                                    <option value="AL">No</option>
+                                  </select>
+                                  
+                                </div>
+                              </div>							  
+							              
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Nationality</label>
+                                 <input type="text"  class="form-control" placeholder="Nationality">
+                                </div>
+                              </div>
+                            </div>
+							<hr/>
+							 <div class="row">
+								<div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Present Employer </label>
+                                 <input type="text"  class="form-control" placeholder="Present Employer ">
+                                </div>
+                              </div>							  
+							 </div>
+							 <hr/>
+							 <div class="row">
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Contact No.</label>
+                                 <input type="text"  class="form-control" placeholder="Contact No.">
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Email ID</label>
+                                 <input type="text"  class="form-control" placeholder="Email ID">
+                                </div>
+                              </div>							  
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Mailing Address Line 1</label>
+                                <textarea class="form-control" placeholder="Address Line 1"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Mailing Address Line 2</label>
+                                <textarea class="form-control" placeholder="Address Line 2"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Mailing State</label>
+									<select class="form-control">
+                                    <option value="AF">Delhi</option>
+                                    <option value="AL">Haryana</option>
+                                  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Mailing City</label>
+									<select class="form-control">
+                                    <option value="AF">Delhi</option>
+                                    <option value="AL">Gurgram</option>
+                                  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Mailing Pincode</label>
+									<input type="text"  class="form-control" placeholder="Pincode">
+                                </div>
+                              </div>
+							 </div>
+							 <hr/>
+							 <div class="row">
+							  							  
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Permanent Address Line 1</label>
+                                <textarea class="form-control" placeholder="Address Line 1"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Permanent Address Line 2</label>
+                                <textarea class="form-control" placeholder="Address Line 2"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Permanent State</label>
+									<select class="form-control">
+                                    <option value="AF">Delhi</option>
+                                    <option value="AL">Haryana</option>
+                                  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Permanent City</label>
+									<select class="form-control">
+                                    <option value="AF">Delhi</option>
+                                    <option value="AL">Gurgram</option>
+                                  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Permanent Pincode</label>
+									<input type="text"  class="form-control" placeholder="Pincode">
+                                </div>
+                              </div>
+							 </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                 
+                                <input type="submit" value="Update" class="submit">
+                              </div>
+                            </div>
+                           
+                          </form>
+                 </div>
+                 
+            </div>
+        </div>
+        </div>
+			 </div>  
+			  
+			  
+			</mat-tab>
+			<mat-tab label="Educational Qualification">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								S.No
+							</th>
+							<th>
+								Examination/Degree
+							</th>
+							<th>
+								Course
+							</th>
+							<th>
+								Percentage of Marks/ Final Grade
+							</th>
+							<th>						
+								Name of Board/College/University 
+							</th>
+							<th>
+								Year of Passing/ Award
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>		
+								Ph.D.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Percentage of Marks/ Final Grade">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Board/College/University">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Year of Passing/ Award">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								M. Phil
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Percentage of Marks/ Final Grade">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Board/College/University">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Year of Passing/ Award">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								3.
+							</td>
+							<td>
+								Master’s Degree
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Percentage of Marks/ Final Grade">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Board/College/University">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Year of Passing/ Award">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								4.
+							</td>
+							<td>
+								Bachelor’s Degree
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Percentage of Marks/ Final Grade">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Board/College/University">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Year of Passing/ Award">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								5.
+							</td>
+							<td>
+								Higher Secondary (12th)
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Percentage of Marks/ Final Grade">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Board/College/University">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Year of Passing/ Award">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								6.
+							</td>
+							<td>
+								Secondary (10th)
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Percentage of Marks/ Final Grade">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Board/College/University">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Year of Passing/ Award">
+							</td>
+						</tr>
+				   </table>	
+               </div>
+			   <div class="col-md-12">
+					<div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Whether Ph.D. awarded:</label>
+									<select class="form-control">
+										<option value="1">Yes</option>
+										<option value="2">No</option>
+									</select>
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">if Yes, indicate the year of award(as per UGC Regulations)</label>
+									<input type="text"  class="form-control" placeholder="Year">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Title of Ph.D.</label>
+									<input type="text"  class="form-control" placeholder="Title of Ph.D.">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Area of Specialization in Ph.D.</label>
+									<input type="text"  class="form-control" placeholder="Area of Specialization in Ph.D.">
+                                </div>
+                              </div>
+			   </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Employment Experience">
+			  <div class="row">
+			  <div class="col-md-12 table">
+					<p>In chronological order starting with the most recent</p>
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>
+								Name of Employer/Status of Institute/ University 
+							</th>
+							<th>						
+								Post held/ Designation
+							</th>
+							<th>
+								Period of Employment(From)
+							</th>
+							<th>
+								Period of Employment(To)
+							</th>
+							<th>
+								Gross salary  
+							</th>
+							<th width="120px">							
+								Responsibilities	
+							</th>							
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase"  class="form-control" placeholder="Name of Employer/Status of Institute/ University ">
+							</td>
+							<td>
+								<input type="text"  style="text-transform:uppercase" class="form-control" placeholder="Post held/ Designation">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="From(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="To(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Gross salary">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Responsibilities">
+							</td>							
+						</tr>
+						<tr *ngIf="academiccounter>0">
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase"  class="form-control" placeholder="Name of Employer/Status of Institute/ University ">
+							</td>
+							<td>
+								<input type="text"  style="text-transform:uppercase" class="form-control" placeholder="Post held/ Designation">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="From(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="To(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Gross salary">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Responsibilities">
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>1">
+							<td>
+								3.
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase"  class="form-control" placeholder="Name of Employer/Status of Institute/ University ">
+							</td>
+							<td>
+								<input type="text"  style="text-transform:uppercase" class="form-control" placeholder="Post held/ Designation">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="From(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="To(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Gross salary">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Responsibilities">
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>2">
+							<td>
+								4.
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase"  class="form-control" placeholder="Name of Employer/Status of Institute/ University ">
+							</td>
+							<td>
+								<input type="text"  style="text-transform:uppercase" class="form-control" placeholder="Post held/ Designation">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="From(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="To(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Gross salary">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Responsibilities">
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>3">
+							<td>
+								5.
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase"  class="form-control" placeholder="Name of Employer/Status of Institute/ University ">
+							</td>
+							<td>
+								<input type="text"  style="text-transform:uppercase" class="form-control" placeholder="Post held/ Designation">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="From(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="To(dd/mm/yyyy)">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Gross salary">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="Responsibilities">
+							</td>
+						</tr>						
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+					  <a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreAcademic()">Add New Employment Experience</a>	
+				   </div>
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Professional Development Activities">
+			  <div class="row">
+			   <div class="col-md-12 table">
+				  1)	Student related co-curricular, extension and field based activities (such as extension work through NSS/NCC and other channels, cultural activities, subject related events, advisement and counseling).	
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>							
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="textarea"  class="form-control" placeholder="Description">
+							</td>							
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="textarea"  class="form-control" placeholder="Description">
+							</td>							
+						</tr>	
+				   </table>
+				   <div style="text-align:right; margin-top:5px">
+					  <a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreVocationTraining()">Add New Training</a>	
+				   </div>	
+               </div>
+			   <div class="col-md-12 table">
+				  2) Contribution to corporate life and management of the department and institution through participation in academic and administrative committees and responsibilities.	
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>							
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="textarea"  class="form-control" placeholder="Description">
+							</td>							
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="textarea"  class="form-control" placeholder="Description">
+							</td>							
+						</tr>	
+				   </table>
+				   <div style="text-align:right; margin-top:5px">
+					  <a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreVocationTraining()">Add New Training</a>	
+				   </div>	
+               </div>
+			   <div class="col-md-12 table">
+				  3)	Professional development activities (such as participation in seminars, conferences, short term, training courses, talks, lectures, membership of associations, dissemination and general articles, etc.	
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>							
+								Description
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="textarea"  class="form-control" placeholder="Description">
+							</td>							
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="textarea"  class="form-control" placeholder="Description">
+							</td>							
+						</tr>	
+				   </table>
+				   <div style="text-align:right; margin-top:5px">
+					  <a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreVocationTraining()">Add New Training</a>	
+				   </div>	
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Research Publications">
+			  <div class="row">
+			  <div style="padding:5px; text-align:justify;">
+				Journal/Book-Self authored/co-authored/ edited 
+			  </div>
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Name of the Journal/ Book
+							</th>
+							<th>							
+								Title of the Article/ Book
+							</th>
+							<th>
+								Whether Sole Author or Co- author
+							</th>
+							<th>
+								Name of Publisher (with city/country)
+							</th>
+							<th>
+								Month & year of publication
+							</th>
+							<th>
+								Referred or Non- referred
+							</th>
+							<th>
+								ISBN/ISSN No.
+							</th>
+							<th>
+								Indexing
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of the Journal/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title of the Article/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether Sole Author or Co- author">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Publisher (with city/country)">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & year of publication">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Referred or Non- referred">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="ISBN/ISSN No.">
+							</td>
+							<td>
+								<select class="form-control">
+                                    <option value="Scopus">Scopus</option>
+                                    <option value="SCI">SCI</option>
+                                    <option value="ESCI">ESCI</option>
+                                    <option value="Web of Science">Web of Science</option>
+                                    <option value="UGC Care List 1">UGC Care List 1</option>
+                                    <option value="Non-Index Journal">Non-Index Journal</option>
+                                  </select>
+							</td>
+						</tr>	
+						<tr *ngIf="intershipcounter>0">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of the Journal/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title of the Article/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether Sole Author or Co- author">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Publisher (with city/country)">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & year of publication">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Referred or Non- referred">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="ISBN/ISSN No.">
+							</td>							
+						</tr>
+						<tr *ngIf="intershipcounter>1">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of the Journal/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title of the Article/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether Sole Author or Co- author">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Publisher (with city/country)">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & year of publication">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Referred or Non- referred">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="ISBN/ISSN No.">
+							</td>							
+						</tr>	
+						<tr *ngIf="intershipcounter>2">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of the Journal/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title of the Article/ Book">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether Sole Author or Co- author">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Publisher (with city/country)">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & year of publication">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Referred or Non- referred">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="ISBN/ISSN No.">
+							</td>							
+						</tr>
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+						<a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreIntership()">Add New</a>
+				   </div>
+               </div>
+			   <div style="padding:5px; text-align:justify;">
+				<b>Research Guidance:</b> Number of scholars who have been awarded M.Phil/ Ph.D. degree under your supervision both as Guide and/or Co-Guide:
+			  </div>
+			  <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Name of Degree
+							</th>
+							<th>							
+								No. of Student
+							</th>
+							<th>
+								In process	
+							</th>
+							<th>
+								Awarded
+							</th>
+						</tr>
+						<tr>
+							<td>
+								M.Phil Degree
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="No. of Student">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="In process">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Awarded">
+							</td>
+						</tr>	
+						<tr>
+							<td>
+								Ph.D Degree:
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="No. of Student">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="In process">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Awarded">
+							</td>
+						</tr>
+				   </table>					  
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Training Courses">
+			  <div class="row">
+			  <div style="padding:5px; text-align:justify;">
+				Refresher Course, Methodology, Workshops, Training, Faculty Development Programs, etc. attended. (Please attach separate sheet, if necessary)
+			  </div>
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>								
+								Name of  Short term Course/ Certification/ Workshop/ Conferences attended
+							</th>
+							<th>								
+								Sponsoring Institution
+							</th>
+							<th>
+								Month & Year
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of  Short term Course/ Certification/ Workshop/ Conferences attended">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Sponsoring Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & Year">
+							</td>						
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of  Short term Course/ Certification/ Workshop/ Conferences attended">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Sponsoring Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & Year">
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								3.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of  Short term Course/ Certification/ Workshop/ Conferences attended">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Sponsoring Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & Year">
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								4.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of  Short term Course/ Certification/ Workshop/ Conferences attended">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Sponsoring Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Month & Year">
+							</td>						
+						</tr>	
+				   </table>	
+               </div>
+			   <div style="padding:5px; text-align:justify;">
+				•	Papers presented in Regional/National and International Seminars/Conferences / Workshop/ Symposium. Indicate whether the Conference Proceedings are published. (Please attach separate sheet, if necessary)
+			  </div>
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>								
+								Title/Subject of paper presented
+							</th>
+							<th>								
+								Subject of Conference / Seminar / Symposium / Workshop
+							</th>
+							<th>
+								Organizing Institution/and Name of City/ Country
+							</th>
+							<th>
+								Duration From to   
+							</th>	
+							<th>
+								Whether the proceedings published Yes/No
+							</th>	
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of paper presented">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Subject of Conference / Seminar / Symposium / Workshop">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Organizing Institution/and Name of City/ Country">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration From to">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether the proceedings published Yes/No">
+							</td>		
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of paper presented">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Subject of Conference / Seminar / Symposium / Workshop">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Organizing Institution/and Name of City/ Country">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration From to">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether the proceedings published Yes/No">
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								3.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of paper presented">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Subject of Conference / Seminar / Symposium / Workshop">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Organizing Institution/and Name of City/ Country">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration From to">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether the proceedings published Yes/No">
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								4.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of paper presented">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Subject of Conference / Seminar / Symposium / Workshop">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Organizing Institution/and Name of City/ Country">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration From to">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Whether the proceedings published Yes/No">
+							</td>						
+						</tr>	
+				   </table>	
+               </div>
+			   <div style="padding:5px; text-align:justify;">
+				Lecture/Special Lecture in Institutions of repute within the country and outside. (Please attach a separate sheet if necessary)
+			  </div>
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>		
+								Title/Subject of Lecture delivered
+							</th>
+							<th>								
+								Name and Place of Institution
+							</th>
+							<th>
+								Date of Lecture
+							</th>
+							<th>								
+								Duration
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of Lecture delivered">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Place of Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Date of Lecture">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration">
+							</td>	
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of Lecture delivered">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Place of Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Date of Lecture">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration">
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								3.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of Lecture delivered">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Place of Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Date of Lecture">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration">
+							</td>					
+						</tr>
+						<tr>
+							<td>
+								4.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Title/Subject of Lecture delivered">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Place of Institution">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Date of Lecture">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Duration">
+							</td>						
+						</tr>	
+				   </table>	
+               </div>
+			    <div style="padding:5px; text-align:justify;">
+				Public Displays/Exhibitions /Performances with or without outputs in CD/ DVD/ Online/ E- Form/ E-Book (for Fine Arts & Visual Arts Faculty) (Please attach a separate sheet if necessary)
+			  </div>
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								S.No.
+							</th>
+							<th>		
+								Title of Show/ Exhibition/Performance with or without CD/DVD/ Tape/ Online/ E-Form/ E-Book version or Brochures
+							</th>
+							<th>								
+								Company/ Agency/Institute Name /self financed(including TV/Radio etc)
+							</th>
+							<th>
+								Categorization I. International II. National III.  Regional (Venues/ event/ gallery/ studio/museums)
+
+							</th>
+							<th>								
+								Solo artist/Performer respectively Artist/ performer respectively
+							</th>
+						</tr>
+						<tr>
+							<td>
+								1.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+						</tr>	
+						<tr>
+							<td>
+								2.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>						
+						</tr>
+						<tr>
+							<td>
+								3.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>					
+						</tr>
+						<tr>
+							<td>
+								4.
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="">
+							</td>						
+						</tr>	
+				   </table>	
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Miscellaneous Information">
+			  <div class="row">
+			   <div class="col-md-12 table" style="padding:20px;">                   
+				   <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Membership/fellowship of other institutions/professional societies::</label>
+                                 <input type="text"  class="form-control" placeholder="">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Other activities/Responsibilities :</label>
+                                 <input type="text"  class="form-control" placeholder="">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Any other relevant information, if not given above :</label>
+                                 <input type="text"  class="form-control" placeholder="">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">If selected for appointment, what notice would you require for joining the post?</label>
+                                 <input type="text"  class="form-control" placeholder="">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Names and Addresses of Referees 1* ::</label>
+                                    <input type="text"  class="form-control" placeholder="">
+                                </div>
+                              </div>
+							  <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="lname">Names and Addresses of Referees 2*:</label>
+                                 <input type="text"  class="form-control" placeholder="">
+                                </div>
+                              </div>
+							 						  
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="References">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Type
+							</th>
+							<th>
+								Full Name
+							</th>
+							<th>
+								Phone Number
+							</th>
+							<th>
+								E-Mail Address
+							</th>
+							<th>
+								Occupation
+							</th>
+							<th>
+								Firm
+							</th>
+							<th>
+								Designation
+							</th>
+							<th>
+								City
+							</th>
+							<th>
+								State
+							</th>
+						</tr>	
+						<tr>
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>
+						</tr>	
+						<tr *ngIf="referencescounter>0">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>
+						</tr>
+						<tr *ngIf="referencescounter>1">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>
+						</tr>
+						<tr *ngIf="referencescounter>2">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>	
+						</tr>
+						<tr *ngIf="referencescounter>3">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>	
+						</tr>	
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+						<a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreReferences()">Add New References</a>
+				   </div>
+               </div>
+               </div>
+			</mat-tab>
+			
+      </mat-tab-group>
+        
+   
+</div>

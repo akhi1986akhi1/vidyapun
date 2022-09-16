@@ -1,0 +1,381 @@
+<div class="home-user">
+  <div class="row">
+    <div class="col-sm-2 sidebar-left">
+      <div class="navigation-menu-tab" style="padding-top:40px;">
+        <ul>
+		<li *ngIf="isEntityType==5">
+            <a
+              [routerLink]="['/user-home/dashboard-professor']"
+              routerLinkActive="router-link-active"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-pie-chart"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/>
+				  <path d="M12 15l5 6H7l5-6z"/>
+                </svg>
+              </span>
+              <span>Professor Dashboards</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==5">
+            <a
+              [routerLink]="['/user-home/dashboard-professorresearch']"
+              routerLinkActive="router-link-active"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-pie-chart"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/>
+				  <path d="M12 15l5 6H7l5-6z"/>
+                </svg>
+              </span>
+              <span>Research Dashboards</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==15">
+            <a
+              [routerLink]="['/user-home/dashboard-professor']"
+              routerLinkActive="router-link-active"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-pie-chart"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/>
+				  <path d="M12 15l5 6H7l5-6z"/>
+                </svg>
+              </span>
+              <span>Project Dashboards</span>
+            </a>
+          </li>
+		  
+          <li *ngIf="isEntityType==4">
+            <a
+              [routerLink]="['/user-home/dashboard']"
+              routerLinkActive="router-link-active"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-pie-chart"
+                >
+                  <path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/>
+				  <path d="M12 15l5 6H7l5-6z"/>
+                </svg>
+              </span>
+              <span>Student Dashboards</span>
+            </a>
+          </li>
+
+          <li *ngIf="isEntityType==4">
+            <a 
+			[routerLink]="['/user-home/admissions']"
+              routerLinkActive="router-link-active"
+			class="active">
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-layers"
+                >
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </span>
+              <span>Admission Enquiry</span>
+            </a>
+          </li>
+          <li *ngIf="isEntityType==4">
+            <a [routerLink]="['/user-home/internship']"
+              routerLinkActive="router-link-active" class="">
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mouse-pointer"
+                >
+                  <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"></path>
+                  <path d="M13 13l6 6"></path>
+                </svg>
+              </span>
+              <span>Student Internship</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==14">
+            <a data-menu-target="#forms" class="">
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mouse-pointer"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M17 11l2 2l4-4"/>
+                </svg>
+              </span>
+              <span>Technical Skill</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==14">
+            <a data-menu-target="#forms" class="">
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mouse-pointer"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M17 11l2 2l4-4"/>
+                </svg>
+              </span>
+              <span>Soft Skill</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==14">
+            <a data-menu-target="#forms" class="">
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-mouse-pointer"
+                >
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M17 11l2 2l4-4"/>
+                </svg>
+              </span>
+              <span>Industry Skill</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==4">
+            <a
+              [routerLink]="['/user-home/profile']"
+              routerLinkActive="router-link-active"
+              data-menu-target="#apps"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-globe"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Profile</span>
+            </a>
+          </li>  
+		  <li *ngIf="isEntityType==5">
+            <a
+              [routerLink]="['/user-home/professorform']"
+              routerLinkActive="router-link-active"
+              data-menu-target="#apps"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-globe"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Profile</span>
+            </a>
+          </li>	
+		  <li *ngIf="isEntityType==5">
+            <a
+              [routerLink]="['/user-home/nonteaching']"
+              routerLinkActive="router-link-active"
+              data-menu-target="#apps"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-globe"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Non-Teaching Form</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==5 || isEntityType==4">
+            <a
+              [routerLink]="['/user-home/exam']"
+              routerLinkActive="router-link-active"
+              data-menu-target="#apps"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-globe"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Exam</span>
+            </a>
+          </li>
+		  <li *ngIf="isEntityType==5">
+            <a
+              [routerLink]="['/user-home/jobposting']"
+              routerLinkActive="router-link-active"
+              data-menu-target="#apps"
+              class=""
+            >
+              <span class="menu-tab-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-globe"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Company Job Posting</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-10 content-right-side">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

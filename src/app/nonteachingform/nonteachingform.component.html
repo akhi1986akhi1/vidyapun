@@ -1,0 +1,1211 @@
+<div class="nonteachingform-page">
+   
+		<mat-tab-group>
+			<mat-tab label="Personal Info.">
+			 <div class="nonteachingform-page-inner">
+			  <div class="row">
+            <div class="col-lg-2">
+                <figure class="pic-frame">
+                    <img alt="" class="product-image" src="assets/images/profile.jpg">
+                    <a href="">Upload profile </a>
+                </figure>
+                
+            </div>
+            <div class="col-lg-10">
+                   <div class="content-info mt-40 mb-40">
+                     <div class="row">
+                       
+                        <form id="contact-form" [formGroup]="profileBasicInfoForm" (ngSubmit)="userRegistration();" novalidate="true">
+                         
+                            <div class="row">
+								<div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Surname</label>
+                                     <select class="form-control">
+										<option value="Mr">Mr.</option>
+										<option value="Mrs">Mrs.</option>
+										<option value="Ms">Ms.</option>
+									  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">First Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="First Name" >
+                                </div>
+                              </div>
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Middle Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Middle Name" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="fname">Last Name</label>
+                                    <input id="form_name" type="text" formControlName="name" class="form-control" placeholder="Last Name" >
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">DOB</label>
+                                 <input type="Number"  class="form-control" placeholder="DOB">
+                                </div>
+                              </div> 
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Nationality</label>
+                                  <input id="email" type="Email" name="email" class="form-control" placeholder="Nationality">       
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Category</label>
+                                  <select class="form-control">
+                                    
+                                  </select>                                  
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                     <label for="lname">Gender</label>
+									  <select class="form-control">
+										<option value="Male">Male</option>
+										<option value="Fmale">Female</option>
+										<option value="TG">Trans Gender</option>
+									  </select>      
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Marital Status</label>
+                                  <select class="form-control">
+                                    <option value="AF">Yes</option>
+                                    <option value="AL">No</option>
+                                  </select>
+                                  
+                                </div>
+                              </div>
+							  <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Physically Challenged</label>
+                                  <select class="form-control">
+                                    <option value="AF">Yes</option>
+                                    <option value="AL">No</option>
+                                  </select>
+                                  
+                                </div>
+                              </div>            
+                              <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="lname">Aadhar No.</label>
+                                 <input type="text"  class="form-control" placeholder="Aadhar No.">
+                                </div>
+                              </div>
+                            </div>
+							<hr/>
+							 <div class="row">
+								<div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Father's Name</label>
+                                 <input type="text"  class="form-control" placeholder="Father Name">
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Mother's Name</label>
+                                 <input type="text"  class="form-control" placeholder="Mother Name">
+                                </div>
+                              </div>
+							 </div>
+							 <hr/>
+							 <div class="row">
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Contact No.</label>
+                                 <input type="text"  class="form-control" placeholder="Contact No.">
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Email ID</label>
+                                 <input type="text"  class="form-control" placeholder="Email ID">
+                                </div>
+                              </div>							  
+							  <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="lname">Address Line 1</label>
+                                <textarea class="form-control" placeholder="Address Line 1"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">Address Line 2</label>
+                                <textarea class="form-control" placeholder="Address Line 2"></textarea>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">State</label>
+									<select class="form-control">
+                                    <option value="AF">Delhi</option>
+                                    <option value="AL">Haryana</option>
+                                  </select>
+                                </div>
+                              </div>
+							  <div class="col-md-6">
+                               <div class="form-group">
+                                    <label for="lname">City</label>
+									<select class="form-control">
+                                    <option value="AF">Delhi</option>
+                                    <option value="AL">Gurgram</option>
+                                  </select>
+                                </div>
+                              </div>
+							 </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                 
+                                <input type="submit" value="Update" class="submit">
+                              </div>
+                            </div>
+                           
+                          </form>
+                 </div>
+                 
+            </div>
+        </div>
+        </div>
+			 </div>  
+			  
+			  
+			</mat-tab>
+			<mat-tab label="Family Details">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Name
+							</th>
+							<th>
+								Relation With You
+							</th>
+							<th>
+								Profession
+							</th>
+							<th>
+								Age
+							</th>
+							<th>
+								Contact Number
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Relation With You">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Profession">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Age">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Contact Number">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Relation With You">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Profession">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Age">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Contact Number">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Relation With You">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Profession">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Age">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Contact Number">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Relation With You">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Profession">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Age">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Contact Number">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Relation With You">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Profession">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Age">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Contact Number">
+							</td>
+						</tr>
+				   </table>	
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Academic Details">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Qualification
+							</th>
+							<th>
+								Course
+							</th>
+							<th>
+								Specialization
+							</th>
+							<th>
+								University Name
+							</th>
+							<th>
+								College Name	
+							</th>
+							<th width="120px">
+								Course Type		
+							</th>
+							<th width="120px">
+								Passing Year	
+							</th>
+							<th>
+								Is Pursuing?
+							</th>							
+						</tr>
+						<tr>
+							<td>
+								<span>Master/Post Graduation</span>
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  style="text-transform:uppercase" class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text" style="text-transform:uppercase" class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Graduate</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>Diploma</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>12th</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<span>10th</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>0">
+							<td>
+								<span>Others</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>1">
+							<td>
+								<span>Others</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>2">
+							<td>
+								<span>Others</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+						<tr *ngIf="academiccounter>3">
+							<td>
+								<span>Others</span>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Course Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Specialization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="University Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="College Name">
+							</td>
+							<td>
+								<select class="form-control">
+									<option value="1">Full Time</option>
+									<option value="2">Part Time</option>
+									<option value="3">Correspondance</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Passing Year">
+							</td>
+							<td>
+								<input type="checkbox" value="Is Pursuing?"/>
+							</td>
+						</tr>
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+					  <a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreAcademic()">Add New Academic</a>	
+				   </div>
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Vocational Training">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Name of Organisation & Location
+							</th>
+							<th>
+								Topic of Project
+							</th>
+							<th>
+								Period
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Organisation & Location">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Topic of Project">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Period">
+							</td>							
+						</tr>	
+						<tr *ngIf="VTrainingcounter>0">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Organisation & Location">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Topic of Project">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Period">
+							</td>							
+						</tr>
+						<tr *ngIf="VTrainingcounter>1">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Organisation & Location">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Topic of Project">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Period">
+							</td>							
+						</tr>	
+						<tr *ngIf="VTrainingcounter>2">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Organisation & Location">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Topic of Project">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Period">
+							</td>							
+						</tr>
+						<tr *ngIf="VTrainingcounter>3">
+							<td>
+								<input type="text"  class="form-control" placeholder="Name of Organisation & Location">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Topic of Project">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Period">
+							</td>							
+						</tr>
+				   </table>
+				   <div style="text-align:right; margin-top:5px">
+					  <a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreVocationTraining()">Add New Training</a>	
+				   </div>	
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Work Experience">
+			  <div class="row">
+			  <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th colspan="2">
+								Date
+							</th>
+							<th rowspan="2">
+								Name and Address of Organization 
+							</th>
+							<th rowspan="2">
+								Detail of position responsibilities etc 
+							</th>
+							<th rowspan="2">
+								Key result areas (KRAs)
+							</th>
+							<th rowspan="2">
+								Achievement
+							</th>
+							<th rowspan="2">
+								Reason for leaving
+							</th>
+						</tr>
+						<tr>
+							<th>
+								From
+							</th>
+							<th>
+								To
+							</th>
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Address of Organization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Detail of position responsibilities etc ">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Key result areas (KRAs)">
+							</td>							
+							<td>
+								<input type="text"  class="form-control" placeholder="Achievement">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Reason for leaving">
+							</td>							
+						</tr>	
+						<tr *ngIf="intershipcounter>0">
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Address of Organization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Detail of position responsibilities etc ">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Key result areas (KRAs)">
+							</td>							
+							<td>
+								<input type="text"  class="form-control" placeholder="Achievement">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Reason for leaving">
+							</td>							
+						</tr>
+						<tr *ngIf="intershipcounter>1">
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Address of Organization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Detail of position responsibilities etc ">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Key result areas (KRAs)">
+							</td>							
+							<td>
+								<input type="text"  class="form-control" placeholder="Achievement">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Reason for leaving">
+							</td>							
+						</tr>	
+						<tr *ngIf="intershipcounter>2">
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="dd/mm/yyyy">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Name and Address of Organization">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Detail of position responsibilities etc ">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Key result areas (KRAs)">
+							</td>							
+							<td>
+								<input type="text"  class="form-control" placeholder="Achievement">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Reason for leaving">
+							</td>							
+						</tr>
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+						<a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreIntership()">Add New Internship</a>
+				   </div>
+               </div>
+               </div>
+			</mat-tab>			
+			<mat-tab label="References">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Type
+							</th>
+							<th>
+								Full Name
+							</th>
+							<th>
+								Phone Number
+							</th>
+							<th>
+								E-Mail Address
+							</th>
+							<th>
+								Occupation
+							</th>
+							<th>
+								Firm
+							</th>
+							<th>
+								Designation
+							</th>
+							<th>
+								City
+							</th>
+							<th>
+								State
+							</th>
+						</tr>
+						<tr>
+							<td style="padding:8px;">
+								Teacher
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>	
+						</tr>
+						
+						<tr style="border-top:0px;">
+							<td style="border-top:0px;" colspan="6">
+							<hr/>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding:8px;">
+								Friend
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>	
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>	
+						</tr>	
+						
+						<tr style="border-top:0px;">
+							<td style="border-top:0px;" colspan="6">
+							<hr/>
+							</td>
+						</tr>
+						
+						<tr>
+							<td style="padding:8px;">
+								Relative
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>
+						</tr>
+						<tr *ngIf="referencescounter>0" style="border-top:0px;">
+							<td style="border-top:0px;" colspan="6">
+							<hr/>
+							</td>
+						</tr>
+						<tr *ngIf="referencescounter>0">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>
+						</tr>
+						<tr *ngIf="referencescounter>1">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>
+						</tr>
+						<tr *ngIf="referencescounter>2">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>	
+						</tr>
+						<tr *ngIf="referencescounter>3">
+							<td style="padding:8px;">
+								<select class="form-control">
+									<option value="1">Teacher</option>
+									<option value="2">Friend</option>
+									<option value="3">Relative</option>
+                                </select>
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Full Name">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Phone Number">
+							</td>	
+							<td>
+								<input type="text"  class="form-control" placeholder="E-Mail Address">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Occupation">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Firm">
+							</td>
+							<td>
+								<input type="text"  class="form-control" placeholder="Designation">
+							</td>
+							<td>
+								<select class="form-control" placeholder="City">									
+                                </select>
+							</td>
+							<td>
+								<select class="form-control" placeholder="State">									
+                                </select>
+							</td>	
+						</tr>	
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+						<a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreReferences()">Add New References</a>
+				   </div>
+               </div>
+               </div>
+			</mat-tab>
+			<mat-tab label="Language Skills">
+			  <div class="row">
+			   <div class="col-md-12 table">
+                   <table>
+						<tr>
+							<th>
+								Language
+							</th>
+							<th style="text-align:center; vertical-align:middle">
+								Spoken
+							</th>
+							<th style="text-align:center; vertical-align:middle">
+								Read
+							</th>
+							<th style="text-align:center; vertical-align:middle">
+								Written
+							</th>						
+						</tr>
+						<tr>
+							<td>
+								<input type="text"  class="form-control" placeholder="Language">
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+						</tr>	
+						<tr *ngIf="languagecounter>0">
+							<td>
+								<input type="text"  class="form-control" placeholder="Language">
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+						</tr>	
+						<tr *ngIf="languagecounter>1">
+							<td>
+								<input type="text"  class="form-control" placeholder="Language">
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+						</tr>	
+						<tr *ngIf="languagecounter>2">
+							<td>
+								<input type="text"  class="form-control" placeholder="Language">
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+						</tr>
+						<tr *ngIf="languagecounter>3">
+							<td>
+								<input type="text"  class="form-control" placeholder="Language">
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+						</tr>
+						<tr *ngIf="languagecounter>4">
+							<td>
+								<input type="text"  class="form-control" placeholder="Language">
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+							<td style="text-align:center; vertical-align:middle">
+								<input type="checkbox"/>
+							</td>	
+						</tr>
+				   </table>	
+				   <div style="text-align:right; margin-top:5px">
+						<a style="color:blue; text-decoration:underline; cursor:pointer;" (click)="addMoreLanguage()">Add New</a>
+				   </div>
+               </div>
+               </div>
+			</mat-tab>			
+      </mat-tab-group>
+        
+   
+</div>

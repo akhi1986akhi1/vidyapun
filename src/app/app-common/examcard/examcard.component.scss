@@ -1,0 +1,52 @@
+.app-examcard {
+
+  .main{
+	padding:20px;
+  }
+  
+  .mat-card-image {
+	margin-top:0px !important;
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0 5px #cccaca;
+	}
+
+	.title {
+		font-size:18px;       
+     }
+	.footer
+	{
+		padding:6px 5px 6px 5px;
+		border-top:1px solid rgba(0,0,0,.125);
+	}
+	.button
+	{
+		background:orange;
+		color:white;
+		padding:5px;
+		border-radius:2px;
+	}
+	.text-right
+	{
+		text-align:right !important;
+	}
+ 
+}
+
+@media screen and (min-width: 410px) and (max-width: 500px) {
+  .product-image {
+    max-height: 6em !important;
+  }
+}
+
+@media screen and (max-width: 410px) and (min-width: 300px) {
+  .product-image {
+    max-height: 8em !important;
+    object-fit: contain !important;
+    background: none !important;
+  }
+}
+
+

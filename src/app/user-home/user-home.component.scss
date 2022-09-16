@@ -1,0 +1,82 @@
+.home-user {
+  .sidebar-left {
+    padding: 0;
+    border-right: 1px solid #ccc;
+  }
+  .content-right-side {
+    padding: 0;
+  }
+}
+
+.navigation-menu-tab {
+  box-shadow: 0 8px 12px 0 rgba(164, 164, 164, 0.2);
+  background-color: #fff;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 98vh;
+    li {
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      word-break: break-all;
+      text-align: center;
+      padding: 15px 0;
+
+      a {
+        &:hover {
+          text-decoration: none;
+          outline: none;
+        }
+        span {
+          display: block;
+          font-size: 11px;
+          display: block;
+          color: #333;
+          font-weight: 600;
+          text-transform: uppercase;
+
+          svg {
+            color: #000;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.college_nav {
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    li {
+      display: inline-block;
+      margin-right: 30px;
+      a {
+        text-transform: uppercase;
+        color: #4d586c;
+        padding: 14px 0;
+        font-weight: 500;
+        position: relative;
+        font-size: 14px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      a.active {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          text-align: center;
+          height: 3px;
+          background-color: #ff7900;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

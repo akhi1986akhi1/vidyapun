@@ -1,0 +1,166 @@
+<div class="exams">
+<div class="row">
+   <div class="col-md-3 pr0">
+       <div  class="side-filter">
+        <div class="block-content">
+            <div class="filter-options-item filter-categori">
+                <div class="filter-options-title">Examination Type</div>
+                <div class="filter-options-content">
+                    <ul>
+                       
+                        <li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamTypeCheckboxChange($event)" [value]="1">
+                                <span class="input"></span>NATIONAL WISE
+                           </label>						   
+                        </li>
+                        <li>
+							<label class="inline">
+                                <input type="checkbox" (change)="onExamTypeCheckboxChange($event)" [value]="2">
+                                <span class="input"></span>STATE WISE
+                           </label>
+						</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-options-item filter-brand">
+                <div class="filter-options-title">APPLICATION & EXAM STATUS</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="FIND CITY">
+                    </div>
+                    <ul>
+                        <li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamStatusCheckboxChange($event)" [value]="1">
+                                <span class="input" ></span>UPCOMING APPLICATION FORM DATE
+                            </label>
+                        </li>
+                        <li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamStatusCheckboxChange($event)" [value]="2">
+                                <span class="input" ></span>UPCOMING EXAMS
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamStatusCheckboxChange($event)" [value]="3">
+                                <span class="input" ></span>APPLICATION FORM IN PROCESS
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamStatusCheckboxChange($event)" [value]="4">
+                                <span class="input" ></span>EXAM IN PROCESS
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="filter-options-item filter-brand">
+                <div class="filter-options-title">APPLICATION MODE</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="FIND STREAM">
+                    </div>
+                    <ul>
+                       <li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onApplicationModeCheckboxChange($event)" [value]="1">
+                                <span class="input" ></span>ONLINE
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onApplicationModeCheckboxChange($event)" [value]="2">
+                                <span class="input" ></span>OFFLINE
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onApplicationModeCheckboxChange($event)" [value]="3">
+                                <span class="input" ></span>ONLINE & OFFLINE BOTH
+                            </label>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+			
+			<div class="filter-options-item filter-brand">
+                <div class="filter-options-title">EXAMINATION MODE</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="FIND STREAM">
+                    </div>
+                    <ul>
+                        <li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamModeCheckboxChange($event)" [value]="1">
+                                <span class="input" ></span>ONLINE
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamModeCheckboxChange($event)" [value]="2">
+                                <span class="input" ></span>OFFLINE
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onExamModeCheckboxChange($event)" [value]="3">
+                                <span class="input" ></span>ONLINE & OFFLINE BOTH
+                            </label>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+			
+			<div class="filter-options-item filter-brand">
+                <div class="filter-options-title">OTHERS</div>
+                <div class="filter-options-content">
+                    <div class="search_wrap">
+                        <i  aria-hidden="true" class="fa fa-search"></i>
+                        <input type="text" class="form-control search-box" placeholder="FIND STREAM">
+                    </div>
+                    <ul>
+                        <li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onOthersCheckboxChange($event)" [value]="1">
+                                <span class="input" ></span>WITH PRACTICE PAPER
+                            </label>
+                        </li>
+						<li>
+                            <label class="inline">
+                                <input type="checkbox" (change)="onOthersCheckboxChange($event)" [value]="2">
+                                <span class="input" ></span>WITH EXPERT TIPS
+                            </label>
+                        </li>
+						
+                    </ul>
+                </div>
+            </div>
+
+            
+           
+        </div>
+       </div>
+   </div>
+
+   <div class="col-md-9 pl0">
+       <div  class="exam-list-container">
+           <div class="row">
+               <div lazy-load *ngFor="let exam of Examist" class="col-md-12" routerLink="/college-details/{{exam.recNo}}">
+					<app-examcard [Examist]="exam"></app-examcard>
+               </div>
+           </div>
+       </div>
+   </div>
+
+</div>
+</div>

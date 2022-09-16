@@ -1,0 +1,127 @@
+.college-card {
+  border: 1px solid #dfdfdf;
+  height: 200px;
+}
+
+.collage-lising {
+  background: #edeff0;
+}
+.college-list-container {
+  //   height: 95vh;
+  //   overflow-y: scroll;
+  //   overflow-x: hidden;
+}
+
+.collage-lising {
+  .side-filter {
+    margin-bottom: 30px;
+    border-radius: 4.4px;
+    background-color: #fff;
+    box-shadow: 0 0 4px 0 rgba(207, 207, 207, 0.5);
+    padding: 6px 12px 0;
+    // .filter-branch {
+    //   margin-top: 25px;
+    // }
+    .search_wrap {
+      margin-bottom: 20px;
+      position: relative;
+
+      .form-control {
+        font-size: 13px;
+        padding-left: 23px;
+      }
+      i {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #ccc;
+      }
+    }
+    .filter-options-title {
+      color: #222;
+      text-transform: uppercase;
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 8px;
+      margin-bottom: 23px;
+      letter-spacing: 0.1em;
+      font-size: 14px;
+      margin-top: 25px;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      padding: 4px 0 5px;
+      margin-bottom: 10px;
+      max-height: 190px;
+      overflow: auto;
+
+      li {
+        color: #aaa;
+        display: block;
+        position: relative;
+        margin-bottom: 3px !important;
+        margin-top: -5px !important;
+        font-size: 14px;
+
+        label.inline {
+          position: relative;
+          input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+          }
+          .input {
+            width: 17px;
+            height: 17px;
+            display: inline-block;
+            border: 1px solid #e6e6e6;
+            margin-right: 8px;
+            background: #f9f9f9;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            border-radius: 3px;
+            text-align: center;
+          }
+        }
+      }
+      .inline input:checked ~ .input {
+        background-color: #0678dc;
+        border: 1px solid #0678dc;
+      }
+    }
+  }
+  .inline .input:before {
+    content: "\f00c";
+    font-family: "FontAwesome";
+    font-size: 10px;
+    color: #fff;
+    line-height: 18px;
+    display: none;
+  }
+  .inline input:checked ~ .input:before {
+    display: block;
+  }
+  ul::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ul::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+
+  ul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.college-list-container > .row {
+  margin: 0 -15px;
+}
+
+.pr0 {
+  padding-right: 0;
+}
