@@ -1,64 +1,94 @@
 <div class="college-details" *ngIf="collegeDetails!=null" style="margin-top:40px;">
     <div class="container-fluid">
-     <div class="row">
-         <div class="col-lg-9">
-       <div class="content_box">
-        <h3 class="content_head">About {{collegeDetails.name}}</h3>
-		<img onError="this.src='assets/images/collage.jpg'" style="padding:5px 0px 10px 0px; width:100%; height:250px; border-radius:10px;" src="{{imageBasePath}}{{collegeDetails.bannerLogo?collegeDetails.bannerLogo:'assets/images/collage.jpg'}}">
-        <div class="author-section">
-            <div class="author-subsection">
-                <div class="author-details">
-				<img class="author-img lazyloaded" onError="this.src='assets/images/collage.jpg'" src="{{imageBasePath}}{{collegeDetails.photo?collegeDetails.photo:'assets/images/collage.jpg'}}" alt="College Duniya">
-                <span class="author">
-                <a class="author-name" href="#" target="_blank"> {{collegeDetails.name}} </a><span class="author-check-svg"></span>
-                <div class="author-profile">{{collegeDetails.streetLine1}} {{collegeDetails.streetLine2}}, {{collegeDetails.cityName}}, {{collegeDetails.stateName}}, {{collegeDetails.countryName}}</div></span></div>
-             </div>
-            </div>
-          <p><strong> About : </strong><span innerHTML="{{collegeDetails.about}}"></span></p>
-			<table  class="table">
-				<tbody>
-					  <tr *ngFor="let data of collegeDetails.CollegeMoreFieldList">
-							<td style="width: 242px;"><p>{{data.name}}</p></td>
-							<td style="width: 585px;"><p>{{data.value}}</p></td>
-					  </tr>
-					  
-				</tbody>
-			</table>            
-            <h3><strong>Gallery:</strong></h3>
-            <div class="row">
-				<div class="col-lg-3" *ngFor="let data of collegeDetails.CollegePhotoGallery">
-					<img onerror="this.src='assets/images/collage.jpg'" style="height:120px; width:100%; padding:5px;" src="{{imageBasePath}}{{data.photoName?data.photoName:'assets/images/collage.jpg'}}">
-				</div>
-			</div>
-        </div>
-         </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="content_box">
+                 
+                           
+                            <h3 class="content_head">
+                                
+                                <img class="author-img lazyloaded" onError="this.src='assets/images/collage.jpg'"
+                                src="{{imageBasePath}}{{collegeDetails.photo?collegeDetails.photo:'assets/images/collage.jpg'}}"
+                                alt="College Duniya">
+                                
+                                {{collegeDetails.name}}
+                            
+                            
+                            </h3>
+                   
+                    <img onError="this.src='assets/images/collage.jpg'"
+                        style="padding:5px 0px 10px 0px; width:100%; height:250px; border-radius:10px;"
+                        src="{{imageBasePath}}{{collegeDetails.bannerLogo?collegeDetails.bannerLogo:'assets/images/collage.jpg'}}">
+                    <div class="author-section">
+                        <div class="author-subsection">
+                            <div class="author-details">
+                                <img class="author-img lazyloaded" onError="this.src='assets/images/collage.jpg'"
+                                    src="{{imageBasePath}}{{collegeDetails.photo?collegeDetails.photo:'assets/images/collage.jpg'}}"
+                                    alt="College Duniya">
+                                <span class="author">
+                                    <a class="author-name" href="#" target="_blank"> {{collegeDetails.name}} </a><span
+                                        class="author-check-svg"></span>
+                                    <div class="author-profile">{{collegeDetails.streetLine1}}
+                                        {{collegeDetails.streetLine2}}, {{collegeDetails.cityName}},
+                                        {{collegeDetails.stateName}}, {{collegeDetails.countryName}}</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p><strong> About : </strong><span innerHTML="{{collegeDetails.about}}"></span></p>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let data of collegeDetails.CollegeMoreFieldList">
+                                <td style="width: 242px;">
+                                    <p>{{data.name}}</p>
+                                </td>
+                                <td style="width: 585px;">
+                                    <p>{{data.value}}</p>
+                                </td>
+                            </tr>
 
-         <div class="col-lg-3">
-             <div class="sidebar">
-                <div class="sidebar-section">
-                    <a href="" class="applynow">apply now <i class="fa fa-envelope"></i></a>
-                   </div>
-                   <div class="sidebar-section">
-                    <a href="" class="applynow download">Download Brochure<i class="fa fa-download" aria-hidden="true"></i></a>
-                   </div>
-                   <div class="notification_box__body">
-                   <div class="notification-section" *ngFor="let data of colllegeList">
-						<a href="">
-							<div class="notification_snippet__logo">
-								<img onerror="this.src='assets/images/collage_logo.png'" src="{{imageBasePath}}{{data.photo?data.photo:'assets/images/collage.jpg'}}">
-							</div>
-							<div class="notification_snippet__title">
-							<h5>{{data.name}}</h5>
-							<p><span innerHTML="{{getLimiteCharacter(data.about)}}"></span></p>
-
-						</div>
-						</a>
-						<span style="cursor:pointer" routerLink="/collegedetail/{{data.code}}" class="notification_readmore">Read More</span>
-					</div>
+                        </tbody>
+                    </table>
+                    <h3><strong>Gallery:</strong></h3>
+                    <div class="row">
+                        <div class="col-lg-3" *ngFor="let data of collegeDetails.CollegePhotoGallery">
+                            <img onerror="this.src='assets/images/collage.jpg'"
+                                style="height:120px; width:100%; padding:5px;"
+                                src="{{imageBasePath}}{{data.photoName?data.photoName:'assets/images/collage.jpg'}}">
+                        </div>
+                    </div>
                 </div>
-             </div>
-         </div>
-     </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <a href="" class="applynow">apply now <i class="fa fa-envelope"></i></a>
+                    </div>
+                    <div class="sidebar-section">
+                        <a href="" class="applynow download">Download Brochure<i class="fa fa-download"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <div class="notification_box__body">
+                        <div class="notification-section" *ngFor="let data of colllegeList">
+                            <a href="">
+                                <div class="notification_snippet__logo">
+                                    <img onerror="this.src='assets/images/collage_logo.png'"
+                                        src="{{imageBasePath}}{{data.photo?data.photo:'assets/images/collage.jpg'}}">
+                                </div>
+                                <div class="notification_snippet__title">
+                                    <h5>{{data.name}}</h5>
+                                    
+                                </div>
+                            </a>
+                            <p><span innerHTML="{{getLimiteCharacter(data.about)}}"></span></p>
+                            <span style="cursor:pointer" routerLink="/collegedetail/{{data.code}}"
+                                class="notification_readmore">Read More</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </div>

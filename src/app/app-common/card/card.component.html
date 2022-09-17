@@ -1,10 +1,12 @@
 <mat-card>
   <mat-card-content class="detail-section card">
-    <div class="image-date">   
+
+    <div class="image-date" style="background-color: red;">   
       <img class="product-image" onError="this.src='assets/images/collage.jpg'"
        src="{{imageBasePath}}{{colleges.bannerLogo?colleges.bannerLogo:'assets/images/collage.jpg'}}"
         alt=""
       />
+
       <div class="title">
         <h3> {{colleges.name}} - {{colleges.cityName}} </h3>
       </div>
