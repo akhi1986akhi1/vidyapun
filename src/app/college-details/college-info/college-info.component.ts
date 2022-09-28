@@ -25,7 +25,7 @@ export class CollegeInfoComponent implements OnInit {
             this._authService.getCollegeDetailsByCode(data).subscribe((res) => {
                 this.spinner.hide();
                 this.collegeDetails = res;
-				console.log("this.collegeDetails",this.collegeDetails);
+				console.table("this.collegeDetails",this.collegeDetails);
             });
      });
   }

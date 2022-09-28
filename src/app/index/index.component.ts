@@ -9,6 +9,8 @@ import {environment} from "@environment";
   styleUrls: ["./index.component.scss"],
 })
 export class IndexComponent implements OnInit {
+
+ 
   public imageBasePath = environment.imageBasePath;
   @HostBinding("class") HomePageComponentClass = "app-home-page";
   selUniversity="";  
@@ -104,10 +106,14 @@ export class IndexComponent implements OnInit {
   ];
 
   colleges = [];
+
+
+
   constructor(private _authService: AuthService, public router: Router) {}
 
   ngOnInit() {
     this.userHome();
+   
   }
 
   userHome() {
@@ -127,4 +133,8 @@ export class IndexComponent implements OnInit {
 	  localStorage.setItem('filterUniversity', this.selUniversity);
 	  this.router.navigate(['/colleges']);   
   }
+
+  
+
+
 }

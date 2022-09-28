@@ -21,6 +21,11 @@ import { ProfessorResearchDashboardComponent } from "./professorresearchdashboar
 import { AboutComponent } from "./about/about.component";
 import { FooterComponent } from "./footer/footer.component";
 import { ContactComponent } from "./contact/contact.component";
+import { CareerDevehomeComponent } from "./career-devehome/career-devehome.component";
+import { CareerInfoComponent } from "./career-info/career-info.component";
+import { PrivacyComponent } from "./privacy/privacy.component";
+import { TermsandconditionComponent } from "./termsandcondition/termsandcondition.component";
+
 
 const routes: Routes = [
   {
@@ -44,6 +49,14 @@ const routes: Routes = [
     component: ContactComponent,
   },
   {
+    path: "careerDevelopment",
+    component: CareerDevehomeComponent,
+  },
+  {
+    path: "careerInfo/:id",
+    component: CareerInfoComponent,
+  },
+  {
     path: "professorform",
     component: ProfessorFormComponent,
   },
@@ -51,18 +64,18 @@ const routes: Routes = [
     path: "jobposting",
     component: JobPostingFormComponent,
   },
-	 {
-		path: "nonteaching",
-		component: NonTeachingFormComponent,
-	 },
-	 {
-		path: "exam",
-		component: ExamFormComponent,
-	 },
-		 {
-			path: "examlist",
-			component: ExamListComponent,
-		 },
+  {
+    path: "nonteaching",
+    component: NonTeachingFormComponent,
+  },
+  {
+    path: "exam",
+    component: ExamFormComponent,
+  },
+  {
+    path: "examlist",
+    component: ExamListComponent,
+  },
   {
     path: "internship",
     component: InternshipComponent,
@@ -107,31 +120,31 @@ const routes: Routes = [
         path: "profile",
         component: ProfileComponent,
       },
-	  {
-		path: "professorform",
-		component: ProfessorFormComponent,
-	  },
-	  {
-		path: "nonteaching",
-		component: NonTeachingFormComponent,
-	  },
-  {
-    path: "jobposting",
-    component: JobPostingFormComponent,
-  },
-	  {
-		path: "internship",
-		component: InternshipComponent,
-	  },
-		 {
-			path: "exam",
-			component: ExamFormComponent,
-		 },
-		 {
-			path: "examlist",
-			component: ExamListComponent,
-		 },
-	  {
+      {
+        path: "professorform",
+        component: ProfessorFormComponent,
+      },
+      {
+        path: "nonteaching",
+        component: NonTeachingFormComponent,
+      },
+      {
+        path: "jobposting",
+        component: JobPostingFormComponent,
+      },
+      {
+        path: "internship",
+        component: InternshipComponent,
+      },
+      {
+        path: "exam",
+        component: ExamFormComponent,
+      },
+      {
+        path: "examlist",
+        component: ExamListComponent,
+      },
+      {
         path: "admissions",
         component: AdmissionsComponent,
       },
@@ -147,7 +160,19 @@ const routes: Routes = [
         path: "dashboard-professorresearch",
         component: ProfessorResearchDashboardComponent,
       },
+      {
+        path: "careerDevelopment",
+        component: CareerDevehomeComponent,
+      },
     ],
+  },
+  {
+    path: "privacy",
+    component: PrivacyComponent,
+  },
+  {
+    path: "terms&condition",
+    component: TermsandconditionComponent,
   },
 ];
 
@@ -155,4 +180,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

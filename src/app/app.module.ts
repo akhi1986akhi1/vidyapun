@@ -35,6 +35,10 @@ import { ProfessorResearchDashboardComponent } from "./professorresearchdashboar
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { CareerDevehomeComponent } from './career-devehome/career-devehome.component';
+import { CareerInfoComponent } from './career-info/career-info.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsandconditionComponent } from './termsandcondition/termsandcondition.component';
 
 
 @NgModule({
@@ -63,7 +67,11 @@ import { ContactComponent } from './contact/contact.component';
 	ExamListComponent,
 	JobPostingFormComponent,
 	AboutComponent,
-	ContactComponent
+	ContactComponent,
+	CareerDevehomeComponent,
+	CareerInfoComponent,
+	PrivacyComponent,
+	TermsandconditionComponent
   ],
   imports: [
     BrowserModule,

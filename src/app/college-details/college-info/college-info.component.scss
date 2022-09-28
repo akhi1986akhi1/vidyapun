@@ -9,6 +9,46 @@
         margin-bottom: 5px;
         box-shadow: 0 0 4px 0 rgba(207, 207, 207, .5);
         padding: 15px;
+        .collegeImageHeader{
+            position: relative;
+            width: 100%;
+            img{
+                background-color: rgb(16, 15, 15);
+                padding: 0;
+                margin: 0;
+            }
+            .collegeImageFooter{
+                position: absolute;
+                bottom: 0;
+                left:0;
+                background: rgba(0, 0, 0, 0.652);
+                width:100%;
+                height:20%;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+               
+                .row{
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    .col{
+                        .row{
+                            display: flex;
+                            
+                            .col{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                justify-content: flex-end;
+                                .download-btn{
+                                    padding: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
 
         .content_head {
             font-size: 20px;
@@ -30,7 +70,36 @@
             border-bottom: 1px solid #efefef;
             font-size: 14px !important;
             font-family: collegedunia, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            position: relative;
+            // border: solid 1px red;
+            padding-bottom: 20px;
+            .collage-rating{
+                position: absolute;
+                top:0;
+                right:0;
+                color: goldenrod;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.151);
 
+                
+            }
+            .author-profile {
+                font-weight: 600;
+            }
+            .top-courses{
+                margin-top: 5px;
+            }
+           
+            .bi-bookmark-star-fill::before {
+                content: "\f19e";color: #3b5999 !important;
+                
+            }
+
+            span.Course {
+                background: lightgray;
+                padding: 2px;
+                border-radius: 5px;
+                margin-right: 5px;
+            }
             .author-date-text {
                 font-size: 14px !important;
                 color: grey;
@@ -41,6 +110,7 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: flex-start;
+            
 
                 img {
                     width: 45px;

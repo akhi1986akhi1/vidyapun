@@ -32,6 +32,8 @@ export class NavigationComponent implements OnInit {
         }
       });
     });
+
+    this.GoToDashboard();
   }
   
   IsLogeedInuser()
@@ -92,6 +94,7 @@ export class NavigationComponent implements OnInit {
    
    GoToDashboard() {
 		this.auth=JSON.parse(localStorage.getItem('currentUser')); 
+    console.log(this.auth);
 		if(this.auth != null)
 		{
 			if(this.auth.Success=="true")
@@ -102,6 +105,7 @@ export class NavigationComponent implements OnInit {
 				if(this.UserRole==4)
 				{
 					this.router.navigateByUrl("user-home/dashboard");
+
 				}
 				else
 				{
@@ -117,6 +121,9 @@ export class NavigationComponent implements OnInit {
 			this.isLogin=false;
 			this.router.navigate(['/']); 
 		}
+
+    // window.location.reload();
+    localStorage.setItem("navStatus","true");
    }
 
   open() {

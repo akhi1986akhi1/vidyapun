@@ -268,8 +268,10 @@
 
                                                     .bi-star-fill{
                                                         text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.253);
-                                                        color: gold;
                                                         font-size: 0.8em;
+                                                        background: -webkit-linear-gradient(gold, goldenrod);
+                                                        -webkit-background-clip: text;
+                                                        -webkit-text-fill-color: transparent;
                                                     }
                                                 }
                                             }

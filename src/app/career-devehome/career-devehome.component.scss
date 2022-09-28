@@ -1,0 +1,223 @@
+.sdstep-1 {
+    //    border: solid 1px red;
+    margin-top: 0%;
+    height: 90vh;
+    //    background-color: red;
+    //    background-image: url(../../assets/images/career/Career-Banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+    .row {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        // border: solid green;
+        .carImageBX{
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            img{
+                width:400px;
+            }
+            .h-message{
+                text-align: center;
+                h2{
+                    color:#0678dc;
+                    font-weight:600;
+                    text-shadow: 3px 3px 20px #0678dc;
+                }
+            }
+        }
+        .subject-cnt {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            background: #b6d8fd;
+            border-radius: 40px;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.22);
+
+
+            label {
+                padding-top: 3px;
+            }
+
+            label,
+            select {
+                padding: 5px;
+                margin: 10px;
+                margin-right: 20px;
+                border: none;
+                outline: none;
+                background: transparent;
+                width: 300px;
+                font-size: 1em;
+                cursor: pointer;
+
+                option {
+                    cursor: pointer;
+                    background: #b6d8fd57;
+                }
+
+                option:hover {
+                    background: #09488b;
+                    color: #fff;
+                }
+            }
+
+
+        }
+    }
+}
+
+.careerOportunity-cnt {
+
+    // margin-bottom: 100px;
+    h2 {
+        margin-top: 0px;
+        text-transform: capitalize;
+        font-weight: 600;
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+
+        .bi-bar-chart-fill {
+            color: #bb0a2b;
+        }
+    }
+
+    .row {
+        gap: 50px;
+        flex-wrap: wrap;
+
+        // margin-bottom: 50px;
+        padding-bottom: 50px;
+        .card {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 300px;
+            height: 250px;
+            padding: 10px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.127);
+            border-radius: 10px;
+            position: relative;
+            background: #b6d8fd;
+            background: linear-gradient(20deg, #57a7fb71, transparent);
+            border: none;
+            transition: all 0.3s ease-in;
+            .card-content{
+            
+                h6{
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 500;
+                    text-transform: capitalize;
+                }
+                h6:before{
+                    content: "";
+                    position: absolute;
+                    width:70%;
+                    height:3px;
+                    background: #bb0a2b;
+                    left:0;
+                    bottom:-5px;
+                }
+            }
+            p{
+                font-size: 0.8em;
+            }
+            .career-rating{
+                position: absolute;
+                top:5px;
+                right:15px;
+                .bi-star-fill{
+                    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.253);
+                    font-size: 0.8em;
+                    background: -webkit-linear-gradient(gold, goldenrod);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+
+            }
+            .top-recuiters{
+                position: absolute;
+                display: flex;
+            
+                bottom:0;
+                left:0;
+                right:0;
+                width:100%;
+                height:40px;
+                background-color: red;
+                background:#57a6fb3e;
+                backdrop-filter: blur();
+                align-items: center;
+                // justify-content: center;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                padding-left: 5px;
+                font-size: 0.8em;
+
+                div{
+                    // background: rgba(3, 141, 254, 0.485);
+                    padding: 2px;
+                    margin-right: 2px;
+                    margin-left: 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 2px;
+                    border: solid 1px rgba(128, 128, 128, 0.305);
+                    img{
+                        width:20px;
+                    }
+                }
+            }
+
+            .card-icon{
+                margin: 5px;
+                img{
+                    width:100px;
+                    overflow: hidden;
+                    
+                }
+            }
+            button {
+
+                outline: none;
+                border: none;
+                background: #09488b;
+                color: #fff;
+                padding: 2px 5px;
+                margin-top: 20px;
+                margin-left: 50px;
+                font-size: 0.8em;
+                border-radius: 3px;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.204);
+
+            }
+        }
+        .card:hover{
+            transition: all 0.3s ease-in;
+            transform: scale(1.2);
+        }
+
+        .card:last-child{
+            // margin-bottom: 50px;
+        }
+    }
+
+}
+
+
+@media (max-width:991px){
+    .carImageBX{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,67 @@
+<div class="container-fluid career-info">
+    <div class="row">
+        <div class="col">
+            <div class="header" [style.background]="bg">
+                <h1>
+                    {{oportunityDetails.position}}
+                </h1>
+                <div class="career-info-sci">
+                    <span>
+                        <i class="bi bi-reply-all-fill"></i>
+                    </span>
+                    <span>
+                        <i class="bi bi-facebook"></i>
+                    </span>
+                    <span>
+                        <i class="bi bi-twitter"></i>
+                    </span>
+                    <span>
+                        <i class="bi bi-share-fill"></i>
+                    </span>
+                </div>
+                <div class="header-logo">
+                    <img src=".././../assets/images/career/{{oportunityDetails.image}}" alt="image not found">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-cnt">
+        <div class="content">
+            <p innerHtml="{{oportunityDetails.about}}">
+                <!-- A medical writer works with doctors, scientists, and other subject matter experts, creates documents that effectively and clearly describe research results, product use, and other medical information. -->
+                <!-- {{data.about}} -->
+            </p>
+            <div class="description" innerHtml="{{oportunityDetails.description}}">
+
+            </div>
+            <div class="description">
+                <ul>
+                    <h5>Required Skills:</h5>
+                    <li *ngFor="let item of oportunityDetails.skills">{{item}}</li> 
+                 </ul>
+            </div>
+            
+        </div>
+        <div class="side-nav">
+            <nav>
+                <ul>
+                    <h5 style="margin-top: 5px;">Top Courses</h5>
+                    <hr/>
+                    <li *ngFor="let item of oportunityDetails.topCourses">
+                        {{item}}
+                    </li>
+                 
+                    <h5>Top Colleges</h5>
+                    <hr/>
+                    <li *ngFor="let item of oportunityDetails.topColleges">{{item.college}}</li>
+                  
+                    <h5>Top Recuiters</h5>
+                    <hr/>
+                    <li *ngFor="let item of oportunityDetails.recuiters">{{item.companyName}}</li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>

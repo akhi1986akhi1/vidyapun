@@ -1,0 +1,78 @@
+<div class="container-fluid sdstep-1">
+    <div class="row d-flex align-items-center justify-content-center">
+        <div class="carImageBX">
+            <img src="../../assets/images/career/career01.png" alt="">
+            <div class="h-message">
+                <h2>Career Opportunities</h2>
+                <h4 style="display:inline-block ;">Let's Work Together</h4>
+                <h5 style="display:inline-block ;">&nbsp; and Explore <span style="color:#bb0a2b;font-weight: 600;"> Opportunities</span></h5>
+                <h5>College to Industry to Job</h5>
+
+            </div>
+        </div>
+        <div class="subject-cnt">
+
+
+            <select #subject (change)="selectSubjectValues(subject.value)">
+                <option>SELECT YOUR COURSE</option>
+
+                <option value="{{sub}}" *ngFor="let sub of sub">{{sub}}</option>
+            </select>
+            <select #strea (change)="selectStreamValues(strea.value)" style="text-align: center;">
+                <option value="">SELECT YOUR STREAM</option>
+
+                <option value="{{stream}}" *ngFor="let stream of stream" style="text-align: left;">{{stream}}</option>
+            </select>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid careerOportunity-cnt">
+
+    <h2 *ngIf="usercarOp.length != 0">Select Your <span style="color: #09488b;"> career</span> path <i
+            class="bi bi-bar-chart-fill"></i></h2>
+    <div class="row d-flex align-items-center justify-content-center">
+
+        <div class="card" *ngFor="let data of usercarOp; index as i">
+          
+            <div class="card-icon">
+                <img src=".././../assets/images/career/{{data.image}}" alt="image not found">
+            </div>
+            <div class="card-content">
+
+                <h6>
+                    <!-- <i class="bi bi-shield-check"></i> -->
+                    {{data.position}}
+                </h6>
+                <p>Avg. Package <span style="font-weight:500 ; color:#09488b;">{{data.avgSal}}</span>/ year</p>
+                <button (click)="navCareerInfo(i)">
+                    <!-- routerLink="/careerInfo/{{data.id}}" routerLinkActive="router-link-active" -->
+                    Know More
+                </button>
+            </div>
+            <div class="career-rating">
+                {{data.rating}}
+                <i class="bi bi-star-fill"></i>
+                <!-- <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i> -->
+            </div>
+            <div class="top-recuiters">
+                Top Recruiter:
+                <div>
+                    <img src="../../assets/images/career/l&tLogo.png" alt="">
+                </div>
+                <div>
+                    <img src="../../assets/images/career/tcs-logo.png" alt="">
+                </div>
+                <div>
+                    <img src="../../assets/images/career/reliance-industries-logo-1.png" alt="">
+                </div>
+            </div>           
+        </div>
+    </div>
+</div>
